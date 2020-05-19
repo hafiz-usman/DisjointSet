@@ -20,7 +20,7 @@ class DisjointSet
     struct Node
     {
         int val;
-        int rank;
+        int rank; // rank is used to help determine which node becomes root when performing union. And used in path compression
         Node* parent;
         Node() :
             val(-1),
